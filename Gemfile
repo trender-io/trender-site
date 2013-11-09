@@ -51,3 +51,8 @@ end
 
 # Added - using backbone.js
 gem "rails-backbone"
+
+group :assets do
+  # other asset gems
+  gem 'asset_sync'
+end
