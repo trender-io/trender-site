@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require a.timeago.js
 //= require turbolinks
 //= require underscore
 //= require backbone

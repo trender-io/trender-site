@@ -1,11 +1,18 @@
-<a href="<%= url %>"><h2><%= title %></h2></a>
-
-<img src="<%= image %>">
-<p>
-	<%= extract %>
-    <%= rating %>
-    <%= time %>
-	<br/><a href="#/<%= id %>">Show</a>
-	<a href="#/<%= id %>/edit">Edit</a>
-	<a href="#/<%= id %>/destroy" class="destroy">Destroy</a>
-</p>
+<div id="story-<%= id %>">
+	<a href="<%= url %>"><h2><%= title %></h2></a>
+	<img src="<%= image %>" />
+	<p>
+		<%= extract %>
+	</p>
+	<div class="footer-links">
+		<div class="source">
+			BBC
+		</div>
+		<div class="timeago" title="<%= time %>">
+	    	<%= time %>
+	    </div>
+	    <div class="rating" data-toggle="popover" data-content='<a href="#/<%= id %>">Show</a><a href="#/<%= id %>/edit">Edit</a><a href="#/<%= id %>/destroy" class="destroy">Destroy</a>' data-html='true'>
+	    	<%= rating %>
+	    </a>
+	</div>
+</div>
