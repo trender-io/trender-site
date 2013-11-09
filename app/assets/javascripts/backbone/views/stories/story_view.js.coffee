@@ -19,3 +19,10 @@ class Trenderio.Views.Stories.StoryView extends Backbone.View
   render: ->
     $(@el).html(@template(@model.toJSON() ))
     return this
+
+  events: =>
+    "click .rating" : this.showhover
+
+
+  showhover: => 
+    this.$('.rating', this).popover();

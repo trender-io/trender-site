@@ -46,4 +46,9 @@ body, html, .page-wrap, .row {
 .main-area {
 	margin-top:15px;
 	margin-bottom:15px;
+	.popover-content {
+		a {
+			margin:0 5px;
+		}
+	}
 }

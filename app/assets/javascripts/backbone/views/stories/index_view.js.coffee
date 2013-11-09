@@ -14,7 +14,7 @@ class Trenderio.Views.Stories.IndexView extends Backbone.View
     @$("#columns").append(view.render().el)
 
   render: =>
-    $(@el).html(@template(stories: @options.stories.toJSON() ))
+    $(@el).html(@template(stories: @options.stories.toJSON() )).timeago();
     @addAll()
-
+    this.$el.find('.timeago').timeago();
     return this
