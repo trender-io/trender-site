@@ -15,14 +15,15 @@
 			<h1>trender<span class="io">.io</span></h1>
 			<h4>the top news from<br/>the best sources</h4>
 			<ul class="cats nav nav-stacked">
-				<li><a href="/#/" class="active">worldwide</a></li>
-				<li><a href="/stories/place/local">local</a></li>
-				<li><a href="/stories/cat/social">social</a></li>
-				<li><a href="/stories/cat/news">news</a></li>
-				<li><a href="/stories/cat/sports">sport</a></li>
-				<li><a href="/stories/cat/tech">tech</a></li>
-				<li><a href="/stories/cat/education">education</a></li>
+				<li><a class="l1" id="index" href="/#/">worldwide</a></li>
+				<li><a class="l2" id="place-local" href="/#/place/local">local</a></li>
+				<li><a class="l3" id="cat-social" href="/#/cat/social">social</a></li>
+				<li><a class="l4" id="cat-news" href="/#/cat/news">news</a></li>
+				<li><a class="l5" id="cat-sport" href="/#/cat/sport">sport</a></li>
+				<li><a class="l6" id="cat-tech" href="/#/cat/tech">tech</a></li>
+				<li><a class="l7" id="cat-education" href="/#/cat/education">education</a></li>
 			</ul>
+			<div class="last-updated">Last updated <span class="time"></span></strong></div>
 		</div>
 		<div class="col-md-10 main-area"><%= yield %></div>
 	</div>
