@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  extract: MyString
+  image: MyString
+  time: 2013-11-08 21:12:38
+  rating: 1.5
+  url: MyString
+
+two:
+  title: MyString
+  extract: MyString
+  image: MyString
+  time: 2013-11-08 21:12:38
+  rating: 1.5
+  url: MyString
