@@ -59,7 +59,7 @@ gem "rails-backbone"
 # Allow global variables
 gem 'figaro'
 
-group :assets do
-  # other asset gems
-  gem 'asset_sync'
-end
+# group :assets do
+#   # other asset gems
+#   gem 'asset_sync'
+# end

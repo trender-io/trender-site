@@ -78,8 +78,8 @@ Trenderio::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
-  config.action_controller.asset_host = Proc.new do |source, request|
-    scheme = request.ssl? ? "https" : "http"
-    "#{scheme}://#{ENV['FOG_DIRECTORY']}.s3.amazonaws.com"
-  end
+  # config.action_controller.asset_host = Proc.new do |source, request|
+  #   scheme = request.ssl? ? "https" : "http"
+  #   "#{scheme}://#{ENV['FOG_DIRECTORY']}.s3.amazonaws.com"
+  # end
 end
