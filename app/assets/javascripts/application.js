@@ -20,3 +20,9 @@
 //= require backbone_datalink
 //= require backbone/trenderio
 //= require_tree .
+
+
+$( document ).ready(function() {
+    time = $.timeago(new Date());
+	$('.left-bar .last-updated .time').append(time);
+});

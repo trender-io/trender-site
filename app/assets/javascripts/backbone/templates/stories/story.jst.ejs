@@ -1,6 +1,7 @@
+
 <div id="story-<%= id %>">
 	<a href="<%= url %>"><h2><%= title %></h2></a>
-	<img src="<%= image %>" />
+	<a href="<%= url %>"><img src="<%= image %>" /></a>
 	<p>
 		<%= extract %>
 	</p>
@@ -11,7 +12,7 @@
 		<div class="timeago" title="<%= time %>">
 	    	<%= time %>
 	    </div>
-	    <div class="rating" data-toggle="popover" data-content='<a href="#/<%= id %>">Show</a><a href="#/<%= id %>/edit">Edit</a><a href="#/<%= id %>/destroy" class="destroy">Destroy</a>' data-html='true'>
+	    <div class="rating" data-toggle="popover" data-content='<a href="#/story/<%= id %>">Show</a><a href="#/story/<%= id %>/edit">Edit</a><a href="#/story/<%= id %>/destroy" class="destroy">Destroy</a>' data-html='true' data-original-title='' title=''>
 	    	<%= rating %>
 	    </a>
 	</div>

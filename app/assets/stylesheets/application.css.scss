@@ -41,6 +41,24 @@ body, html, .page-wrap, .row {
 		a.active {
 			font-weight:600;
 		}
+		li a:hover,
+		li a:focus {
+		  text-decoration: none;
+		}
+		a.active.l1, a:hover.l1, a:focus.l1  {color:#5191df;}
+		a.active.l2, a:hover.l2, a:focus.l2  {color:#94d81e;}
+		a.active.l3, a:hover.l3, a:focus.l3  {color:#e3348a;}
+		a.active.l4, a:hover.l4, a:focus.l4  {color:#e39734;}
+		a.active.l5, a:hover.l5, a:focus.l5  {color:#ed4545;}
+		a.active.l6, a:hover.l6, a:focus.l6  {color:#3155db;}
+		a.active.l7, a:hover.l7, a:focus.l7  {color:#8d31db;}
+	}
+	.last-updated {
+		margin-top:30px;
+		font-size:0.8em;
+		.time {
+			font-weight: 600;
+		}
 	}
 }
 .main-area {
@@ -49,6 +67,14 @@ body, html, .page-wrap, .row {
 	.popover-content {
 		a {
 			margin:0 5px;
+		}
+	}
+}
+@media (max-width: 991px) {
+	.left-bar {
+		height: auto;
+		.nav {
+			display:none;
 		}
 	}
 }

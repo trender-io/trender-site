@@ -78,6 +78,10 @@
 		column-count: 5;
 	}
 }
-
-#columns:hover .single:not(:hover) {
+@media (max-width: 991px) {
+	#columns {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		column-count: 1;
+	}
 }

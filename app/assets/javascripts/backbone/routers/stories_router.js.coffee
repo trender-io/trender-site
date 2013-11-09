@@ -6,10 +6,19 @@ class Trenderio.Routers.StoriesRouter extends Backbone.Router
   routes:
     "new"      : "newStory"
     "index"    : "index"
-    ":id/edit" : "edit"
-    ":id"      : "show"
-    ".*"        : "index"
+    "story/:id/edit" : "edit"
+    "story/:id"      : "show"
+    ".*"             : "index"
+    "place/:loc"     : "place"
+    "cat/:cat"       : "cat"
   
+  deselectNavs: ->
+    $('ul.nav a').removeClass('active');
+
+  selectNav: (nav) ->
+    this.deselectNavs();
+    $('ul.nav #'+nav).addClass('active');
+
   newStory: ->
     @view = new Trenderio.Views.Stories.NewView(collection: @stories)
     $("#stories").html(@view.render().el)
@@ -17,6 +26,17 @@ class Trenderio.Routers.StoriesRouter extends Backbone.Router
   index: ->
     @view = new Trenderio.Views.Stories.IndexView(stories: @stories)
     $("#stories").html(@view.render().el)
+    this.selectNav('index');
+
+  place: (loc) ->
+    @view = new Trenderio.Views.Stories.IndexView(stories: @stories)
+    $("#stories").html(@view.render().el)
+    this.selectNav('place-'+loc);
+
+  cat: (cat) ->
+    @view = new Trenderio.Views.Stories.IndexView(stories: @stories)
+    $("#stories").html(@view.render().el)
+    this.selectNav('cat-'+cat);
 
   show: (id) ->
     story = @stories.get(id)

@@ -5,7 +5,7 @@ class Trenderio.Models.Story extends Backbone.Model
     title: null
     extract: null
     image: null
-    time: null
+    time: new Date()
     rating: null
     url: null
 
