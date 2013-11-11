@@ -29,12 +29,12 @@ class Trenderio.Routers.StoriesRouter extends Backbone.Router
     this.selectNav('index');
 
   place: (loc) ->
-    @view = new Trenderio.Views.Stories.IndexView(stories: @stories)
+    @view = new Trenderio.Views.Stories.IndexView(stories: @stories, place: loc)
     $("#stories").html(@view.render().el)
     this.selectNav('place-'+loc);
 
   cat: (cat) ->
-    @view = new Trenderio.Views.Stories.IndexView(stories: @stories)
+    @view = new Trenderio.Views.Stories.IndexView(stories: @stories, cat: cat)
     $("#stories").html(@view.render().el)
     this.selectNav('cat-'+cat);
 

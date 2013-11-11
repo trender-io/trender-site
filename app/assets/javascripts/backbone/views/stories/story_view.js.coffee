@@ -4,8 +4,9 @@ Trenderio.Views.Stories ||= {}
 class Trenderio.Views.Stories.StoryView extends Backbone.View
   template: JST["backbone/templates/stories/story"]
 
-  events:
+  events: ->
     "click .destroy" : "destroy"
+    "click .rating" : 'showhover'
 
   tagName: "div"
   className: "single"
@@ -20,10 +21,6 @@ class Trenderio.Views.Stories.StoryView extends Backbone.View
     $(@el).html(@template(@model.toJSON() ))
     this.$('.rating', this).popover('hide');
     return this
-
-  events: =>
-    "click .rating" : 'showhover'
-
 
   showhover: => 
     this.$('.rating', this).popover();
