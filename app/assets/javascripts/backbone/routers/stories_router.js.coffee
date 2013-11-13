@@ -11,6 +11,7 @@ class Trenderio.Routers.StoriesRouter extends Backbone.Router
     ".*"             : "index"
     "place/:loc"     : "place"
     "cat/:cat"       : "cat"
+    "about"          : "about"
   
   deselectNavs: ->
     $('ul.nav a').removeClass('active');
@@ -49,3 +50,9 @@ class Trenderio.Routers.StoriesRouter extends Backbone.Router
 
     @view = new Trenderio.Views.Stories.EditView(model: story)
     $("#stories").html(@view.render().el)
+
+
+  about: ->
+    @view = new Trenderio.Views.Other.AboutView()
+    $("#stories").html(@view.render().el)
+    this.selectNav('about');

@@ -1,18 +1,6 @@
 // Place all the styles related to the Stories controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-#columns {
-	-webkit-column-count: 3;
-	-webkit-column-gap: 20px;
-	-webkit-column-fill: auto;
-	-moz-column-count: 3;
-	-moz-column-gap: 20px;
-	-moz-column-fill: auto;
-	column-count: 3;
-	column-gap: 20px;
-	column-fill: auto;
-}
-
 .single {
 	width:100%;
 	display: inline-block;
