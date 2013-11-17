@@ -18,6 +18,7 @@ class Trenderio.Routers.StoriesRouter extends Backbone.Router
 
   selectNav: (nav) ->
     this.deselectNavs();
+    $(this).scrollTop(0);
     $('ul.nav #'+nav).addClass('active');
 
   newStory: ->

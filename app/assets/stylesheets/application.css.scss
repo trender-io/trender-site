@@ -11,24 +11,27 @@
  *= require_self
  *= require_tree .
  */
-body, html, .page-wrap, .row {
+body, html, .page-wrap {
 	height:100%;
 	background:#f4f4f4;
 	color:#626262;
 }
 .page-wrap {
 	padding: 0 15px;
-	font-family: "proxima-nova",sans-serif;
+	font-family: "proxima-nova", "Proxima Nova",sans-serif;
 }
 .left-bar {
+}
+.left-bar {
+	position: fixed!important;
+	top: 0;
+	left: 0;
+	z-index: 99;
 	height: 100%;
 	background-color: #fff;
 	h1 {
 		color:#5191df;
 		font-weight:300;
-		.io {
-			color:#d1d1d1;
-		}
 	}
 	.cats {
 		margin-top:30px;
@@ -80,11 +83,34 @@ body, html, .page-wrap, .row {
 }
 a.active.l1, a:hover.l1, a:focus.l1,.t1  {color:#5191df;}
 a.active.l2, a:hover.l2, a:focus.l2,.t2  {color:#45b29d;}
-a.active.l3, a:hover.l3, a:focus.l3,.t3,.todo  {color:#e3348a;}
+a.active.l3, a:hover.l3, a:focus.l3,.t3  {color:#e3348a;}
 a.active.l4, a:hover.l4, a:focus.l4,.t4  {color:#df5a49;}
 a.active.l5, a:hover.l5, a:focus.l5,.t5  {color:#e27a3f;}
 a.active.l6, a:hover.l6, a:focus.l6,.t6  {color:#334d5c;}
 a.active.l7, a:hover.l7, a:focus.l7,.t7  {color:#8d31db;}
+.no-padding {padding:0!important;}
+.about {
+	h1 {font-size:4em;font-weight:600;}
+	margin:-40px -30px;
+	.what {
+		a:link, a:hover, a:active, a:visited {color:#fff; text-decoration: underline;}
+		color:#fff;
+		padding:40px 30px;
+	}
+	.what-1 {background-color:#5191df;}
+	.what-2 {background-color:#45b29d;}
+	.what-3 {background-color:#e3348a;}
+	.what-4 {background-color:#df5a49;}
+	.about-image {
+		float:right;
+	}
+	.desc {
+		margin-left:15px;
+	}
+}
+.io {
+	color:#d1d1d1;
+}
 
 @media (max-width: 991px) {
 	.left-bar {
