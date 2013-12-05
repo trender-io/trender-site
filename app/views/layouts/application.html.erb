@@ -7,13 +7,12 @@
   <script type="text/javascript" src="//use.typekit.net/nxg2yey.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
 </head>
 <body>
 <div class="page-wrap">
 	<div class="row">
-<!-- 		<div class="col-md-2 left-bar-under">
-		</div>
- -->		<div class="left-bar">
+		<div class="left-bar">
 			<h1>trender<span class="io">.io</span></h1>
 			<h4>the top news from<br/>the best sources</h4>
 			<ul class="cats nav nav-stacked">
@@ -33,7 +32,7 @@
 			</ul>
 			</div>
 		</div>
-		<div class="col-md-10 main-area"><%= yield %></div>
+		<div class="main-area"><%= yield %></div>
 	</div>
 </div>
 </body>
