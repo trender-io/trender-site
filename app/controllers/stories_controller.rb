@@ -4,7 +4,7 @@ class StoriesController < ApplicationController
   # GET /stories
   # GET /stories.json
   def index
-    @stories = Story.all #:limit => 2
+    @stories = Story.order('rating DESC').all
   end
 
   # GET /stories/1
