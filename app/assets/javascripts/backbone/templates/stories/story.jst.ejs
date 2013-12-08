@@ -7,7 +7,13 @@
 	</p>
 	<div class="footer-links">
 		<div class="source">
-			BBC
+			<%  if (url) {
+				if 		(url.indexOf("cnn.com") != -1) { %>CNN<% }
+				else if (url.indexOf("bbc") != -1) { %>BBC<% }
+				else if (url.indexOf("nytimes.com") != -1) { %>New York Times<% }
+				else if (url.indexOf("theguardian.com") != -1) { %>The Guardian<% }
+				else if (url.indexOf("nbcnews.com") != -1) { %>NBC<% }
+				else { %>CNN<% } }%>
 		</div>
 		<div class="timeago" title="<%= time %>">
 	    	<%= time %>
