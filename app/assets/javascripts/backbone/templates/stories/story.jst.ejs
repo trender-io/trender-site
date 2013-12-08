@@ -1,6 +1,6 @@
 
 <div id="story-<%= id %>" class="ind-story">
-	<a href="<%= url %>"><h2><%= title %></h2></a>
+	<h2><a href="<%= url %>"><%= title %></a></h2>
 	<%if (image && (image.indexOf("nytimes.com") == -1)) { %><div class="img-area"><a href="<%= url %>"><img src="<%= image %>" /></a></div><%}%>
 	<p>
 		<%= extract %>
