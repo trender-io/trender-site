@@ -1,7 +1,7 @@
 
 <div id="story-<%= id %>" class="ind-story">
 	<a href="<%= url %>"><h2><%= title %></h2></a>
-	<div class="img-area"><a href="<%= url %>"><img src="<%= image %>" /></a></div>
+	<%if (image) { %><div class="img-area"><a href="<%= url %>"><img src="<%= image %>" /></a></div><%}%>
 	<p>
 		<%= extract %>
 	</p>
