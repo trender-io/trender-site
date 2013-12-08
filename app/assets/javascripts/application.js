@@ -14,7 +14,6 @@
 //= require jquery_ujs
 //= require a.timeago.js
 //= require jquery.wookmark.js
-//= require imagesloaded.js
 //= require turbolinks
 //= require underscore
 //= require backbone
