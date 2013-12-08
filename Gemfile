@@ -2,16 +2,15 @@ source 'http://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
-gem 'mysql2'
 
 group :production do
   gem 'pg'
   gem 'newrelic_rpm'
 end        
 
-# group :development, :test do
-#   gem 'mysql2'
-# end
+group :development, :test do
+  gem 'sqlite3'
+end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'

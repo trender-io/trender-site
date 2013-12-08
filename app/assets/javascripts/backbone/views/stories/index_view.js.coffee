@@ -29,5 +29,5 @@ class Trenderio.Views.Stories.IndexView extends Backbone.View
     $(@el).html(@template(stories: @options.stories.toJSON() ));
     @addAll()
     this.$el.find('.timeago').timeago();
-    $('nav a').remove('active');
+    $('nav a').remove('active');    
     return this

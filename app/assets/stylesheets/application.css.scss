@@ -17,9 +17,10 @@ body, html, .page-wrap {
 	color:#626262;
 }
 .page-wrap {
-	padding: 0 15px;
 	margin-left:250px;
 	font-family: "proxima-nova", "Proxima Nova",sans-serif;
+	position: relative;
+	margin-top:20px;
 }
 .left-bar {
 	width: 250px;
@@ -62,17 +63,17 @@ body, html, .page-wrap {
 		margin-top:20px;
 	}
 }
-#columns, .columns {
-	-webkit-column-count: 3;
-	-webkit-column-gap: 20px;
-	-webkit-column-fill: auto;
-	-moz-column-count: 3;
-	-moz-column-gap: 20px;
-	-moz-column-fill: auto;
-	column-count: 3;
-	column-gap: 20px;
-	column-fill: auto;
-}
+// #columns, .columns {
+// 	-webkit-column-count: 3;
+// 	-webkit-column-gap: 20px;
+// 	-webkit-column-fill: auto;
+// 	-moz-column-count: 3;
+// 	-moz-column-gap: 20px;
+// 	-moz-column-fill: auto;
+// 	column-count: 3;
+// 	column-gap: 20px;
+// 	column-fill: auto;
+// }
 .main-area {
 	padding:15px;
 	.popover-content {

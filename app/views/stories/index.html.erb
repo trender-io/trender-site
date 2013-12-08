@@ -6,6 +6,8 @@
     window.router = new Trenderio.Routers.StoriesRouter({stories: <%= @stories.to_json.html_safe -%>});
     if (!Backbone.History.started) {
     	Backbone.history.start();
+
     }
+    
   });
 </script>

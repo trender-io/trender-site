@@ -8,7 +8,7 @@ class Trenderio.Views.Stories.StoryView extends Backbone.View
     "click .destroy" : "destroy"
     "click .rating" : 'showhover'
 
-  tagName: "div"
+  tagName: "li"
   className: "single"
 
   destroy: () ->
