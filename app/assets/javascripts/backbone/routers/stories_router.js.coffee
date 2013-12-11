@@ -20,7 +20,7 @@ class Trenderio.Routers.StoriesRouter extends Backbone.Router
     this.deselectNavs();
     $(this).scrollTop(0);
     $('ul.nav #'+nav).addClass('active');
-    $('#stories li').wookmark({itemWidth:300, autoResize:true, container: $('#stories')});
+    $('#stories li.single').wookmark({itemWidth:300, autoResize:true, offset:5, container: $('#stories')});
 
   newStory: ->
     @view = new Trenderio.Views.Stories.NewView(collection: @stories)
